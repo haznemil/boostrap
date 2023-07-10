@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+      .form{
+        width: 50%;
+        padding: 50px;
+        background-color: bisque;
+        border-radius: 5%;
+      }
+      input{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <div class="form">
+    <form>
+      <div class="row mb-3">
+        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputFile" class="col-sm-2 col-form-label">Choose Photo</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="inputFile">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputDate" class="col-sm-2 col-form-label">Date Of Birth</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="inputDate">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Email ID</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputNumber" class="col-sm-2 col-form-label">Mobile Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputNumber">
+        </div>
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="Male" value="option1">
+            <label class="form-check-label" for="gridRadios1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="Female" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Female
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="row mb-3">
+        <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+          <div class="form-floating">
+            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputCity" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPin" class="col-sm-2 col-form-label">PinCode</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPin" maxlength="6">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputCountry" class="col-sm-2 col-form-label">Country</label>
+        <div class="col-sm-10">
+          <select id="inputCountry" class="form-select">
+            <option selected>Choose...</option>
+            <option>India</option>
+            <option>UAE</option>
+            <option>America</option>
+            <option>Egypt</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputHob" class="col-sm-2 col-form-label">Hobbies</label>
+        <div class="col-sm-10">
+          <input type="checkbox">Drawing
+          <input type="checkbox">Swimming
+          <input type="checkbox">Dancing
+          <input type="checkbox">Sketching
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputQualification" class="col-sm-2 col-form-label">Qualification</label>
+        <div class="col-sm-10">
+          <table>
+            <tr>
+                <th>SL.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+                <td><input type="text" class="form-control" id="inputName"></td>
+            </tr>
+        </table>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Courses Applied For</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="course" id="BCA" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                BCA
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="course" id="BCom" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                BCom
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="course" id="BScCS" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                BSc CS
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="course" id="BBA" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                BBA
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
+  </div>  
+</body>
+</html>

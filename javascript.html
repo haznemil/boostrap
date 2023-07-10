@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <input id="firstnumber" type="number">
+    <input id="secondnumber" type="number">
+    <input id="thirdnumber" type="number">
+    <h1 id="result"></h1>
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="greater()">Find Which Number is Greater</button>
+
+    <script>
+        function add() {
+           let num1=parseFloat(document.getElementById("firstnumber").value);
+           let num2=parseFloat(document.getElementById("secondnumber").value); 
+           let num3=num1+num2;
+           document.getElementById("result").innerHTML=num3;
+        }
+        function subtract() {
+           let num1=parseFloat(document.getElementById("firstnumber").value);
+           let num2=parseFloat(document.getElementById("secondnumber").value);
+           let num3=num1-num2;
+           document.getElementById("result").innerHTML=num3;
+        }
+        function multiply() {
+           let num1=parseFloat(document.getElementById("firstnumber").value);
+           let num2=parseFloat(document.getElementById("secondnumber").value);
+           let num3=num1*num2;
+           document.getElementById("result").innerHTML=num3;
+        }
+        function divide() {
+           let num1=parseFloat(document.getElementById("firstnumber").value);
+           let num2=parseFloat(document.getElementById("secondnumber").value);
+           let num3=num1/num2;
+           document.getElementById("result").innerHTML=num3;
+        }
+        function greater() {
+           let num1=parseFloat(document.getElementById("firstnumber").value);
+           let num2=parseFloat(document.getElementById("secondnumber").value);
+           let num3=parseFloat(document.getElementById("thirdnumber").value);
+        //    console.log(num1);
+        //    console.log(num2);
+        //    console.log(num3);
+           if (num1>num2) {
+                console.log(`${num1} is greater`);
+                document.getElementById("result").innerHTML=num1;
+           }
+           else if(num2>num3){
+                console.log(`${num2} is greater`);
+                document.getElementById("result").innerHTML=num2;
+           }
+           else{
+                console.log(`${num3} is greater`);
+                document.getElementById("result").innerHTML=num3;
+           }
+        }
+    </script>
+</body>
+</html>
